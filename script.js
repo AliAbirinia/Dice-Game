@@ -87,7 +87,7 @@ newBtn.addEventListener("click", () => {
   holdBtn.disabled = false;
   currentScore = 0;
   activePlayer = 0;
-  player1El.classList.contains("player-active")
-    ? player0El.classList.add("player-active")
-    : player0El.classList.add("player-active");
+  if (player1El.classList.contains("player-active")) {
+    toggleActiveClass();
+  }
 });
